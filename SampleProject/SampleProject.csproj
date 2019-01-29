@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Samples</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\Error.ico" />
+    <None Remove="Icons\Inactive.ico" />
+    <None Remove="Images\Add.png" />
+    <None Remove="Images\Close.png" />
+    <None Remove="Images\Info.png" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\Preferences.png" />
+    <None Remove="Images\Remove.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NotifyIconWpf\NotifyIconWpf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\Error.ico" />
+    <Resource Include="Icons\Inactive.ico" />
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\Info.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Preferences.png" />
+    <Resource Include="Images\Remove.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\FancyBalloon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\FancyPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\FancyToolTip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\NotifyIconResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\ShowcaseWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Showcase\WelcomeBalloon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\01 - Declaration\NotifyIconResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\01 - Declaration\SimpleWindowWithNotifyIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\02 - ToolTips\InlineToolTipWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\02 - ToolTips\SimpleUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\02 - ToolTips\UserControlToolTipWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\03 - Popups\InlinePopupWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\04 - ContextMenus\InlineContextMenuWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\05 - Balloons\BalloonSampleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\06 - Commands\CommandWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\07 - Events\EventVisualizerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\08 - DataBinding\DataBoundToolTipWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\09 - MVVM\ClockPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Tutorials\09 - MVVM\MvvmSampleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>
